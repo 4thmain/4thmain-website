@@ -1,0 +1,25 @@
+{
+    "article": [
+{
+    "timestamp":"2013-01-31T19:43:37+0100",
+    "title":"Political Map of India",
+    "slug":"d3-map",
+    "tags":"information-design map static",
+    "thumb":"Ajanta.jpg"
+    },
+    {
+    "timestamp":"2012-01-31T19:43:37+0100",
+    "title":"Ahmedabad BRTS Map",
+    "slug":"d3-map",
+    "tags":"information-design map static",
+    "thumb":"Ahmedabad_BRTS_thumb.png"
+    },
+    {
+    "timestamp":"2013-02-1T19:43:37+0100",
+    "title":"Example d3 and leaflet map",
+    "slug":"d3-leaflet-map",
+    "tags":"information-design map dynamic",
+    "thumb":""
+    }
+    ]
+}
