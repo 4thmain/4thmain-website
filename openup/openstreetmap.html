@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+    <![endif]-->
+    <!--[if IE 7]>
+        <html class="no-js lt-ie9 lt-ie8">
+        <![endif]-->
+        <!--[if IE 8]>
+            <html class="no-js lt-ie9">
+            <![endif]-->
+            <!--[if gt IE 8]>
+                <!-->
+                <html class="no-js">
+                <!--<![endif]-->
+                
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                    <title>
+                        OpenUp - Open source maps
+                    </title>
+                    <meta name="description" content="OpenStreetMap
+                or OSM is an online collaborative project to create a free and editable map of the whole world">
+                    <meta name="viewport" content="width=device-width">
+                    <!-- Place favicon.ico and apple-touch-icon.png in the root directory
+                    -->
+                    <link rel="stylesheet" href="lib/foundation/css/foundation.min.css">
+                    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <script src="js/vendor/modernizr-2.6.2.min.js">
+                                    
+                    </script>
+                </head>
+                
+                <body>
+                    <!--[if lt IE 7]>
+                        <p class="chromeframe">
+                            You are using an
+                            <strong>
+                                outdated
+                            </strong>
+                            browser. Please
+                            <a href="http://browsehappy.com/">upgrade your browser</a>
+                            or
+                            <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
+                            to improve your experience.
+                        </p>
+                    <![endif]-->
+                    <!-- Add your site or application content here -->
+                    <article>
+                        <section class="row">
+                        <div class="large-12 columns" id="map"></div>
+                        </section>
+                        <header class="title row">
+                            <h1>
+                                Open source map of
+                                <em>
+                                    Cubbon Park
+                                </em>
+                            </h1>
+                            </header>
+                            <div class="content row">
+                                <section class="project large-8 columns">
+                                    
+                                       
+                                    
+                                   <dl><dt> <h3>
+                                        OpenStreetMap
+                                    </h3></dt>
+                                     <img src="img/openstreetmap-logo.svg"></img>
+                                    <dd>or OSM is an online collaborative project to create a free and editable
+                                    map of the whole world.</dd></dl>
+                                    </section>
+                                     <aside class="credits large-4 columns">
+                                <section class="why">
+                                    <h4>
+                                        Why?
+                                    </h4>
+                                    <p>
+                                        This poster was created to showcase the public benefit of contributing
+                                        to open source projects. The software and data used to create this poster
+                                        has been possible due to the millions of volunteer contributions from all
+                                        parts of the world who are part of the open source community.
+                                    </p>
+                                    <p>
+                                        And the resulting work is available for you to use, improve, translate
+                                        and distribute at no cost.
+                                    </p>
+                                </section>
+                                <section class="how">
+                                    <h4 class="subheader">
+                                        How?
+                                    </h4>
+                                    <ul class="source">
+                                        <li>
+                                            Map data:
+                                            <a href="http://www.osm.org">© OpenStreetMap contributors</a>
+                                            ,
+                                            <a href="http://download.geofabrik.de">download India data from Geofabrik</a>
+                                            ,
+                                            <a>available under ODbL license</a>
+                                        </li>
+                                        <li>
+                                            Tools:
+                                            <a href="http://mapbox.com/tilemill/">TileMill</a>
+                                        </li>
+                                        <li>
+                                            Typeface:
+                                            <a href="http://www.google.com/webfonts/specimen/Source+Sans+Pro">Source Sans Pro from Adobe</a>
+                                        </li>
+                                        <li>
+                                            Design:
+                                            <a href="http://4thmain.com/">4thMain</a>
+                                        </li>
+                                    </ul>
+                                   
+                                </section>
+                                 </aside>
+                                <section class="what">
+                                    <h3 class="subheader">
+                                        What?
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            Use this map to understand your city
+                                        </li>
+                                        <li>
+                                            Navigate and explore the neighbourhood
+                                        </li>
+                                        <li>
+                                            Improve this map and show the world what’s special here
+                                        </li>
+                                        <li>
+                                            Download the map data and create your own maps
+                                        </li>
+                                        <li>
+                                            Make copies of this map, redistribute it, or sell it
+                                        </li>
+                                    </ul>
+                                </section>
+                               
+                            </div>
+                            <footer class="row clear">
+                                <h2>
+                                    We create, we use, and we own it. Let’s support Open Source!
+                                    <span id="logo">
+                                        4thMain
+                                    </span>
+                                </h2>
+                            </footer>
+                    </article>
+                    <!--Scripts-->
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+                                            
+                    </script>
+                    <script>
+                                            window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
+                    </script>
+                    <script src="lib/leaflet/leaflet.js">
+                        
+                    </script>
+                    <script src="js/plugins.js">
+                                            
+                    </script>
+                    <script src="js/main.js">
+                                            
+                    </script>
+                    <script>
+                                            var map = L.map('map').setView([18.9, 72.8], 16);
+
+
+                        $(document).ready(function() {
+                            //Add a leaflet layer
+                            http: //{s}.tiles.mapbox.com/v3/planemad.india-streets/{z}/{x}/{y}.png
+                            L.tileLayer('http://{s}.tiles.mapbox.com/v3/planemad.india-streets/{z}/{x}/{y}.png', {
+                                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://4thmain.com">4th Main</a>',
+                                maxZoom: 18
+                            }).addTo(map);
+
+
+                        });
+                    </script>
+                    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                    <script>
+                                            var _gaq = [
+                            ['_setAccount', 'UA-XXXXX-X'],
+                            ['_trackPageview']
+                        ];
+                        (function(d, t) {
+                            var g = d.createElement(t),
+                                s = d.getElementsByTagName(t)[0];
+                            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                            s.parentNode.insertBefore(g, s)
+                        }(document, 'script'));
+                    </script>
+                    <!--WebFonts-->
+                    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700"
+                    rel='stylesheet' type='text/css'>
+                </body>
+                
+                </html>
