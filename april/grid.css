@@ -1,0 +1,51 @@
+.wrapper:before,
+.wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.wrapper:after {
+    clear: both;
+}
+
+.wrapper {
+    *zoom: 1;
+}
+
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+
+}
+
+.c1,
+.c2,
+.c1-c2 {
+	float: left;
+}
+
+.c1{
+	width: 21.667221524671%;
+
+}
+
+[class*="c1"]+[class*="c2"] {
+	margin-left:20.37%;
+}
+
+[class*="c2"],
+[class^="c1-"]+[class^="c2"],
+[class*=" c1-"]+[class^="c2"] {
+	margin-left: 42.012669%%;
+	width: 44.45%;
+}
+
+
+[class*="c2"]+[class*="c2"]{
+	clear:left;
+}
+.c1-c2{
+	clear: left;
+	margin-left: 0;
+	width:86.5%;
+}
