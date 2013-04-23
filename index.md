@@ -1,7 +1,8 @@
 ---
 title: Hello, World!
+layout: default
 ---
 
 # Hello World
 
-Works
+Works np
