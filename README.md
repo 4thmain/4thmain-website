@@ -1,7 +1,7 @@
 4thmain-website
 ===============
 
-4thmain.com is a simple web.py app
+4thmain.com is the homepage of the collective works of the Design Studio at 4TH MAIN.
 
 Updating the site
 =================
